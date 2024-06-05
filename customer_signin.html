@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-black-custom { background-color: #1F1F1F; }
+        .bg-purple-custom { background-color: #8A2BE2; }
+        .hover\\:bg-purple-600:hover { background-color: #6A1B9A; }
+        .focus\\:ring-purple-500:focus { ring-color: #8A2BE2; }
+        .bg-cover-custom {
+            background-image: url("salon2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .button-custom {
+            width: 200px;
+            height: 60px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .button-custom:hover {
+            border-color: #8A2BE2;
+        }
+	input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background-color: black;
+            color: white;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #8A2BE2;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-cover-custom">
+    <div class="min-h-screen flex items-center justify-center bg-purple-800 bg-opacity-20">
+        <div class="bg-black p-8 rounded-lg shadow-lg max-w-md w-full relative">
+            <a href="index.html" class="absolute top-4 left-4 flex items-center text-purple-500 hover:text-purple-700 focus:outline-none">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back
+            </a>
+            <h2 class="text-2xl font-bold mb-6 text-center text-purple-800">Sign In</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="full-name" class="block text-sm font-medium text-white">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-white">Email Address</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-white">Password</label>
+                    <input type="password" id="password" name="password" class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="address" class="block text-sm font-medium text-white">Address</label>
+                    <input type="text" id="address" name="address" class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" required>
+                </div>
+                <button type="submit" class="w-full bg-purple-custom text-white py-2 px-4 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">Sign In</button>
+            </form>
+            <div class="mt-6">
+                <p class="text-center text-gray-500">Or continue with</p>
+                <div class="flex mt-4 space-x-4 justify-center">
+                    <button class="flex items-center bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.676 0H1.326C.594 0 0 .593 0 1.326v21.348C0 23.407.594 24 1.326 24H12.82v-9.294H9.692V11.27h3.128V8.412c0-3.1 1.892-4.785 4.656-4.785 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.503 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.436H16.56V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.676 0z"/>
+                        </svg>
+                        Facebook
+                    </button>
+                    <button class="flex items-center bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            
+                        </svg>
+                        Google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
