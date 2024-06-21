@@ -6,23 +6,23 @@
     <title>Service Provider Registration</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-	.bg-black-custom { background-color: #1F1F1F; }
-        .bg-purple-custom { background-color: #8A2BE2; }
-        .hover\\:bg-purple-600:hover { background-color: #6A1B9A; }
-        .focus\\:ring-purple-500:focus { ring-color: #8A2BE2; }
+        .bg-black-custom { background-color: #1F1F1F; }
+        .bg-orange-custom { background-color: #FFA500; }
+        .hover\\:bg-orange-600:hover { background-color: #FF8C00; }
+        .focus\\:ring-orange-500:focus { ring-color: #FFA500; }
         .bg-cover {
             background-image: url('salon2.jpg');
         }
-	.button-custom {
+        .button-custom {
             width: 200px;
             height: 60px;
             border: 2px solid transparent;
             transition: all 0.3s ease;
         }
         .button-custom:hover {
-            border-color: #8A2BE2;
-	}
-	input[type="text"],
+            border-color: #FFA500;
+        }
+        input[type="text"],
         input[type="email"],
         input[type="password"] {
             background-color: black;
@@ -31,25 +31,22 @@
         input[type="text"]:focus,
         input[type="email"]:focus,
         input[type="password"]:focus {
-            border-color: #8A2BE2;
+            border-color: #FFA500;
             outline: none;
         }
-	
     </style>
 </head>
-<body class="bg-cover bg-purple-800 min-h-screen flex items-center justify-center">
+<body class="bg-cover bg-orange-800 min-h-screen flex items-center justify-center">
     <div class="bg-black bg-opacity-90 p-8 rounded-lg shadow-md w-full max-w-md">
         <div class="bg-black p-8 rounded-lg shadow-lg max-w-md w-full relative">
-            <a href="index.html" class="absolute top-4 left-4 flex items-center text-purple-800 hover:text-purple-700 focus:outline-none">
-
+            <a href="index.html" class="absolute top-4 left-4 flex items-center text-orange-800 hover:text-orange-700 focus:outline-none">
                 <svg class="h-6 w-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
                 Back
             </a>
         </div>
-        <h1 class="text-2xl font-bold text-purple-800 mb-6 text-center">Sign In</h1>
-	
+        <h1 class="text-2xl font-bold text-orange-800 mb-6 text-center">Sign Up</h1>
         <form>
             <div class="mb-4">
                 <label class="block text-white text-sm font-bold mb-2" for="fullname">Full Name</label>
@@ -67,18 +64,34 @@
                 <label class="block text-white text-sm font-bold mb-2" for="shopname">Shop Name</label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="shopname" type="text" placeholder="Shop Name">
             </div>
-	    <div class="mb-4">
-                <label class="block text-white text-sm font-bold mb-2" for="shopname">Shop Type</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="shopname" type="text" placeholder="Men Salon, Beauty Salon,etc...">
-            </div>
-
             <div class="mb-4">
-                <label class="block text- text-sm font-bold mb-2" for="shopaddress">Shop Address</label>
+                <label class="block text-white text-sm font-bold mb-2" for="shopname">Shop Type</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="shopname" type="text" placeholder="Men Salon, Beauty Salon, etc...">
+            </div>
+            <div class="mb-4">
+                <label class="block text-white text-sm font-bold mb-2" for="shopaddress">Shop Address</label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="shopaddress" type="text" placeholder="Shop Address">
             </div>
-	    <button type="submit" class="w-full bg-purple-custom text-white py-2 px-4 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">Sign In</button>                                 
-            </div>
+            <button type="submit" class="w-full bg-orange-custom text-white py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">Sign Up</button>
         </form>
+	<div class="mt-6">
+                <p class="text-center text-gray-500">Or continue with</p>
+                <div class="flex mt-4 space-x-4 justify-center">
+                    <button class="flex items-center bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.676 0H1.326C.594 0 0 .593 0 1.326v21.348C0 23.407.594 24 1.326 24H12.82v-9.294H9.692V11.27h3.128V8.412c0-3.1 1.892-4.785 4.656-4.785 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.503 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.436H16.56V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.676 0z"/>
+                        </svg>
+                        Facebook
+                    </button>
+                    <button class="flex items-center bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            
+                        </svg>
+                        Google
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
